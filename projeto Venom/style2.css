@@ -1,0 +1,186 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Arimo:ital@0;1&family=Kdam+Thmor+Pro&display=swap");
+
+* {
+  margin: auto;
+  padding: 0;
+  background-color: black;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+header {
+  height: 90px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav {
+    margin-bottom: 0px;
+  width: 60%; /* Adjusts width based on content */
+}
+
+ul {
+  display: flex;
+  width: 100%;
+  padding-top: 0;
+  margin: 0;
+  justify-content: space-between; /* Horizontal spacing */
+  text-align: right;
+  margin-right: 100%;
+  list-style: none;
+}
+
+li {
+  list-style: none;
+  color: aliceblue;
+  cursor: pointer;
+  font-size: 19px;
+  transition: 0.5s;
+  font-family: "kdam thmor pro", sans-serif;
+  text-align: center;
+
+  margin-right: 100%;
+}
+
+li:hover {
+  color: #d21617;
+}
+.contatos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+    background-color: hsl(0, 0%, 1%); /* cor de fundo */
+}
+#logo {
+    width: 120px;
+    height: 50px;
+    margin-top: 10px;
+    display: inline;
+    margin-left: 20px;
+    /* margin-left: 50px;
+    margin-top: 0%;
+    margin-bottom: auto;
+    margin-right: 10px; */
+  }
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+    color:#ece4e4;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+    display: block; /* Garante que cada campo comece em uma nova linha */
+    width: 100%; /* Ajusta a largura para ocupar o espaço disponível */
+    max-width: 400px; /* Limita a largura máxima */
+    margin-bottom: 15px; /* Espaço entre os campos */
+    padding: 10px; /* Adiciona espaçamento interno */
+    color: #ffffff; /* Cor do texto */
+    background-color: #333; /* Cor de fundo */
+    border: 1px solid #ccc; /* Borda */
+    border-radius: 5px; /* Arredonda as bordas */
+    font-family: "kdam thmor pro", sans-serif; /* Fonte */
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #bbb; /* Cor do texto do placeholder (opcional) */
+}
+
+
+.buttonC {
+    align-self: center; /* Centraliza o botão dentro do formulário */
+    color: #ece4e4;
+    background-color: #d92323;
+    border-radius: 60px;
+    font-size: 20px;
+    width: 100%; /* Faz o botão ter a largura do formulário */
+    height: 50px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.buttonC:hover{
+color: #333;
+background-color: #ece4e4;
+}
+#h1c{
+    color: #d92323;
+    margin-bottom: 30px;
+}
+
+.depoimentos {
+    text-align: center;
+    background-color: #170606;
+    color: #fff;
+    padding: 50px;
+  }
+  
+  .depoimento {
+    background-color: #666;
+    border-radius: 20px;
+    padding: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+  }
+  
+  .avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 30px;
+  }
+  
+  .avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .texto {
+    flex: 1;
+  }
+  
+  .texto h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+/* Responsividade para telas menores */
+@media (max-width: 480px) {
+    .depoimento {
+      padding: 15px; /* Reduz o padding em telas menores */
+    }
+  
+    #h1c {
+      font-size: 24px; /* Ajusta o tamanho da fonte */
+    }
+  }

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria Venom</title>
+    <style>
+        body {
+            font-family: "kdam thmor pro", sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: white;
+        }
+
+        nav {
+            background-color: #1e1e1e;
+            padding: 1em;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            padding: 20px;
+            cursor: pointer;
+        }
+
+        h2 {
+            color: #f1f1f1;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 15px;
+        }
+
+        .grid img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s;
+        }
+
+        .grid img:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #1e1e1e;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 480px) {
+        nav {
+            padding: 0.5em; /* Reduz o padding do nav */
+        }
+
+        nav a {
+            font-size: 14px; /* Reduz ainda mais o tamanho da fonte */
+            margin: 0 5px; /* Ajusta a margem */
+        }
+
+        .grid {
+            grid-template-columns: 1fr; /* Coloca os itens em uma única coluna */
+        }
+
+        h2 {
+            font-size: 20px; /* Ajusta o tamanho do título */
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="./index.html">Home</a>
+        <a href="./fotos.html">Fotos</a>
+        <a href="./comentarios.html">Comentários</a>
+        <a href="./contatos.html">Contatos</a>
+    </nav>
+
+    <div id="home" class="container">
+        <!-- <h2>Bem-vindo à Galeria Venom!</h2> -->
+        <h2>Galeria de Fotos</h2>
+        <p>Aqui você encontra imagens incríveis do filme Venom. Explore as fotos e aproveite o conteúdo exclusivo!</p>
+    </div>
+
+    <div id="fotos" class="container">
+    
+        <div class="grid">
+            <img src="https://img.ibxk.com.br/2024/09/12/cavalo-venom-12114226683109.jpg?ims=328x" alt="Venom 1">
+            <img src="https://oficialgeek.com/wp-content/uploads/2024/10/image-4-1024x576.png" alt="Venom 2">
+            <img src="https://p2.trrsf.com/image/fget/cf/774/0/images.terra.com/2024/05/18/1485606608-venom8.jpg"
+                alt="Venom 3">
+            <img src="https://s2-g1.glbimg.com/MxFriQmrxtJdS6smiSyojuacc_E=/502x0:2193x1059/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2024/v/A/dT7FVmRLAypCt3bw9h7w/venom3.jpg"
+                alt="Venom 4">
+            <img src="https://pbs.twimg.com/media/GbGOxrWWMAAOWJl?format=jpg&name=4096x4096" alt="">
+           <img src="https://cinevisao.pt/wp-content/uploads/2024/09/Trailer-final-do-filme-Venom-A-Ultima-Danca.jpg" alt="">
+            <img src="https://alemdatocadocoelho.wordpress.com/wp-content/uploads/2024/10/venom-a-ultima-rodada04.jpg?w=1024" alt="">
+                <img src="https://ingresso-a.akamaihd.net/b2b/production/uploads/article/image/2674/876dcdcf9b63d5e5bd7a8cb13eadb5d2.jpg"
+                alt="Venom 6">
+        </div>
+    </div>
+
+    <div id="comentarios" class="container">
+        <h2>Comentários</h2>
+        <p>Deixe sua opinião sobre o filme Venom! O que você achou da performance de Tom Hardy?</p>
+        <form>
+            <textarea placeholder="Deixe seu comentário..." rows="4"
+                style="width: 100%; margin-bottom: 10px;"></textarea>
+            <br>
+            <button type="submit"
+                style="padding: 10px 20px; background-color: #333; color: white; border: none; cursor: pointer;">Enviar
+                Comentário</button>
+        </form>
+    </div>
+
+    <div id="contatos" class="container">
+        <h2>Contatos</h2>
+        <p>Entre em contato conosco pelo email: <a href="mailto:contato@venom.com"
+                style="color: #fff;">contato@venom.com</a></p>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Galeria Venom. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>
